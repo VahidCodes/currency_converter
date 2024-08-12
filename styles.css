@@ -1,0 +1,147 @@
+
+/* styles.css */
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --button-bg-color: #28a745;
+    --button-hover-color: #218838;
+    --container-bg-color: white;
+}
+
+body.dark-mode {
+    --background-color: #303136;
+    --text-color: #f4f4f4;
+    --button-bg-color: #505050;
+    --button-hover-color: #606060;
+    --container-bg-color: #505050;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(91%2c 93%2c 95%2c 1)'%3e%3c/rect%3e%3cpath d='M0 231.33L10 169.41L20 153.17L30 90.78L40 145.7L50 131.36L60 124.49L70 74.87L80 19.88L90 83.79L100 22.09L110 0.38L120 44.4L130 6.76L140 19.02L150 46.89L160 68.14L170 113.51L180 124.54L190 55.77L200 17.33L210 75.45L220 21.68L230 38.23L240 65.46L250 105.3L260 148.3L270 85.69L280 85.93L290 135.04L300 99.05L310 98.39L320 165.83L330 187.48L340 248.27L350 265.61L360 233.92L370 275.65L380 238.59L390 212.61L400 165.57L410 234.48L420 266.39L430 284.21L440 233.25L450 264.83L460 290.86L470 312.33L480 265.67L490 264.09L500 235.82L510 245.89L520 215.41L530 210.21L540 242.52L550 254.34L560 282.64L570 250.41L580 247.22L590 178.2L600 211.2L610 279.49L620 257.91L630 209.46L640 236.17L650 260.66L660 289.2L670 291.29L680 238.53L690 223.9L700 249.54L710 200.22L720 190.91L730 135.3L740 161.53L750 221.73L760 222.06L770 237.18L780 199.95L790 148.45L800 194.08L810 141.57L820 183.34L830 227.2L840 210.4L850 268.85L860 302.51L870 297.87L880 298.45L890 300.43L900 235.67L910 278.13L920 234.68L930 182.22L940 178.34L950 113.05L960 51.14L970 41.46L980 100.35L990 134.96L1000 82.53L1010 38.51L1020 35.31L1030 97.76L1040 164.03L1050 182.22L1060 180.31L1070 166.72L1080 180.15L1090 238.04L1100 259.16L1110 235.52L1120 239.75L1130 247.22L1140 224.88L1150 284.26L1160 232.3L1170 241.81L1180 268.22L1190 250.6L1200 285.75L1210 323.3L1220 316.85L1230 259.2L1240 253.26L1250 229.5L1260 263.3L1270 317.98L1280 368.26L1290 321.22L1300 252.13L1310 201.73L1320 139.24L1330 151.28L1340 91.59L1350 157.66L1360 216.23L1370 182.17L1380 151.51L1390 210.34L1400 197.24L1410 162.32L1420 101.72L1430 142.01L1440 169.57' stroke='rgba(0%2c 0%2c 0%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 231.33L10 169.41L20 153.17L30 90.78L40 145.7L50 131.36L60 124.49L70 74.87L80 19.88L90 83.79L100 22.09L110 0.38L120 44.4L130 6.76L140 19.02L150 46.89L160 68.14L170 113.51L180 124.54L190 55.77L200 17.33L210 75.45L220 21.68L230 38.23L240 65.46L250 105.3L260 148.3L270 85.69L280 85.93L290 135.04L300 99.05L310 98.39L320 165.83L330 187.48L340 248.27L350 265.61L360 233.92L370 275.65L380 238.59L390 212.61L400 165.57L410 234.48L420 266.39L430 284.21L440 233.25L450 264.83L460 290.86L470 312.33L480 265.67L490 264.09L500 235.82L510 245.89L520 215.41L530 210.21L540 242.52L550 254.34L560 282.64L570 250.41L580 247.22L590 178.2L600 211.2L610 279.49L620 257.91L630 209.46L640 236.17L650 260.66L660 289.2L670 291.29L680 238.53L690 223.9L700 249.54L710 200.22L720 190.91L730 135.3L740 161.53L750 221.73L760 222.06L770 237.18L780 199.95L790 148.45L800 194.08L810 141.57L820 183.34L830 227.2L840 210.4L850 268.85L860 302.51L870 297.87L880 298.45L890 300.43L900 235.67L910 278.13L920 234.68L930 182.22L940 178.34L950 113.05L960 51.14L970 41.46L980 100.35L990 134.96L1000 82.53L1010 38.51L1020 35.31L1030 97.76L1040 164.03L1050 182.22L1060 180.31L1070 166.72L1080 180.15L1090 238.04L1100 259.16L1110 235.52L1120 239.75L1130 247.22L1140 224.88L1150 284.26L1160 232.3L1170 241.81L1180 268.22L1190 250.6L1200 285.75L1210 323.3L1220 316.85L1230 259.2L1240 253.26L1250 229.5L1260 263.3L1270 317.98L1280 368.26L1290 321.22L1300 252.13L1310 201.73L1320 139.24L1330 151.28L1340 91.59L1350 157.66L1360 216.23L1370 182.17L1380 151.51L1390 210.34L1400 197.24L1410 162.32L1420 101.72L1430 142.01L1440 169.57L1440 560L0 560z' fill='url(%26quot%3b%23SvgjsLinearGradient1007%26quot%3b)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient1007'%3e%3cstop stop-opacity='0.65' stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='black' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.converter-container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.4s;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.converter-form {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    margin: 10px auto;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon);
+    width: var(--size-of-icon);
+    border-radius: 20px;
+    left: var(--slider-offset);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #303136;
+}
+
+input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon) + var(--slider-offset)));
+    background: #303136;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+

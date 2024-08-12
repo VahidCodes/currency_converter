@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Valyuta çeviricisi</h1>
+        <div class="converter-form">
+            <div class="input-group">
+                <label for="amount">Dəyər:</label>
+                <input type="number" id="amount" placeholder="Dəyəri daxil et">
+            </div>
+            <div class="input-group">
+                <label for="from-currency">Bu məzənnədən:</label>
+                <select id="from-currency">
+                    <option value="USD">ABŞ Dolları(USD)</option>
+                    <option value="EUR">Euro(EUR)</option>
+                    <option value="GBP">Britaniya Funtu(GBP)</option>
+                    <option value="AZN">Azərbaycan Manatı(AZN)</option>
+                    <option value="JPY">Yapon Yeni(JPY)</option>
+                    <option value="CHF">İsveçrə Frankı(CHF)</option>
+                    <option value="CAD">Kanada Dolları(CAD)</option>
+                    <option value="AUD">Avstraliya Dolları(AUD)</option>
+                    <option value="CNY">Çin Yuanı(CNY)</option>
+                    <option value="NZD">Yeni Zellandiya Dolları(NZD)</option>
+                    <option value="INR">Hindistan Rupisi(INR)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="to-currency">Bu məzənnəyə:</label>
+                <select id="to-currency">
+                    <option value="USD">ABŞ Dolları(USD)</option>
+                    <option value="EUR">Euro(EUR)</option>
+                    <option value="GBP">Britaniya Funtu(GBP)</option>
+                    <option value="AZN">Azərbaycan Manatı(AZN)</option>
+                    <option value="JPY">Yapon Yeni(JPY)</option>
+                    <option value="CHF">İsveçrə Frankı(CHF)</option>
+                    <option value="CAD">Kanada Dolları(CAD)</option>
+                    <option value="AUD">Avstraliya Dolları(AUD)</option>
+                    <option value="CNY">Çin Yuanı(CNY)</option>
+                    <option value="NZD">Yeni Zellandiya Dolları(NZD)</option>
+                    <option value="INR">Hindistan Rupisi(INR)</option>
+                </select>
+            </div>
+            <button id="convert-btn">Çevir</button>
+        </div>
+        <div class="result" id="result">
+            <!-- The conversion result will be displayed here -->
+        </div>
+
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
